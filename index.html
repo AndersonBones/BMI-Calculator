@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Comfortaa:wght@300&family=Hind+Madurai&family=Montserrat:wght@300&family=Poiret+One&family=Raleway:wght@100&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>BMI Calculator</title>
+    <script src="./script.js" defer></script>
+</head>
+    <body>
+
+        <section class="Container">
+            <div class="container-bmi">
+                <div class="title-container">
+                    <h2>BMI CALCULATOR</h2>
+                </div>
+    
+                <div class="gender-select">
+                    <button id="male-gender">
+                        <i class="bi bi-gender-male" style="font-size: 20px"></i>
+                        <p>MALE</p>
+                       
+                    </button>
+    
+                    <button id='female-gender'>
+                        <i class="bi bi-gender-female" style="font-size: 20px;"></i>
+                        <p>FEMALE</p>
+                    </button>
+                    
+                </div>
+    
+                <div class="user-container">
+                    <input id="weightUser" type="number" placeholder="Weight KG">
+                    <input id="heightUser" type="number" placeholder="Height CM">
+                    <input id="ageUser" type="number" placeholder="Age">
+                </div>
+    
+                <div class="calc-btn-container">
+                    <button onclick="CalculateBMI()" id="calculate-btn">CALCULATE</button>
+                    
+                </div>
+    
+                <div class="result-bmi-container">
+                    <div class="ideal-bmi">
+                        <p>IDEAL BMI</p>
+                        <h2>21.9</h2>
+                        <p>This is the ideal BMI</p>
+                    </div>
+    
+                    <div class="your-bmi">
+                        <p>YOUR BMI</p>
+                        <h2 id="user-bmi-result">TDB</h2>
+                        <p id="status-bmi-user">TDB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <footer>
+            <p>COPYRIGHT © <a href="https://github.com/AndersonBones" target="_blank">AndersonBones</a> - 2022</p>
+        </footer>
+    </body>
+</html>
